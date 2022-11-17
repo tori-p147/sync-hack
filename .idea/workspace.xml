@@ -1,29 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="26066f0e-edd4-4397-b02d-d0ff2371f485" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sync-hack.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync-hack/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync-hack/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync-hack/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync-hack/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync-hack/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync-hack/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync-hack/src/main/java/synchack/financial.market/SyncHackApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync-hack/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync-hack/src/test/java/synchack/financialmarket/SyncHackApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkstyle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sync-hack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sync-hack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync-hack/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync-hack/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync-hack/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync-hack/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync-hack/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync-hack/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync-hack/src/main/java/synchack/financial.market/SyncHackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/SyncHackApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync-hack/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sync-hack/src/test/java/synchack/financialmarket/SyncHackApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/synchack/financialmarket/SyncHackApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2HJg1QaanecH9we4J05p4e70wWL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -33,10 +61,48 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2&#10;postgresql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect" value="PostgreSQL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/db" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.13927579" />
+    <property name="project.structure.side.proportion" value="0.27099842" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="O:\projects\sync-hack\src\main\resources\db" />
+      <recent name="O:\projects\sync-hack" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="O:\projects\sync-hack\src\main\resources\db" />
+      <recent name="O:\projects\sync-hack" />
+      <recent name="O:\projects\sync-hack\sync-hack\src\main\java\synchack\financial.market" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SyncHackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sync-hack" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="synchack.financial.market.SyncHackApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -47,6 +113,10 @@
       <option name="presentableId" value="Default" />
       <updated>1668008386256</updated>
       <workItem from="1668008387798" duration="328000" />
+      <workItem from="1668373901230" duration="4850000" />
+      <workItem from="1668450741598" duration="10248000" />
+      <workItem from="1668664356827" duration="1546000" />
+      <workItem from="1668666409541" duration="4481000" />
     </task>
     <servers />
   </component>
