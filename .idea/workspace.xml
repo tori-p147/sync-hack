@@ -4,29 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26066f0e-edd4-4397-b02d-d0ff2371f485" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/checkstyle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sync-hack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sync-hack.iml" afterDir="false" />
+    <list default="true" id="26066f0e-edd4-4397-b02d-d0ff2371f485" name="Changes" comment="add entities">
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/BaseMonetaryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/LockedBalance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/operation/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/operation/OperationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/BaseUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync-hack/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync-hack/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync-hack/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync-hack/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync-hack/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync-hack/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync-hack/src/main/java/synchack/financial.market/SyncHackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/SyncHackApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync-hack/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync-hack/src/test/java/synchack/financialmarket/SyncHackApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/synchack/financialmarket/SyncHackApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkstyle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -53,6 +46,22 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/db/initDB.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/db/populateDB.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/LockedBalance.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/config/AppConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Admin.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/SyncHackApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Client.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/BaseEntity.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/application.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/BaseUser.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/config/MvcConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/UserRepository.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/checkstyle.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="2HJg1QaanecH9we4J05p4e70wWL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -63,6 +72,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="h2&#10;postgresql" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -74,7 +84,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect" value="PostgreSQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/db" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/synchack/financial.market/model" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.13927579" />
@@ -87,11 +98,15 @@
       <recent name="O:\projects\sync-hack" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="O:\projects\sync-hack\src\main\java\synchack\financial\market\model" />
       <recent name="O:\projects\sync-hack\src\main\resources\db" />
       <recent name="O:\projects\sync-hack" />
       <recent name="O:\projects\sync-hack\sync-hack\src\main\java\synchack\financial.market" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="synchack.financial.market.model" />
+      <recent name="synchack.financial.market.model.operation" />
+      <recent name="synchack.financial.market" />
       <recent name="" />
     </key>
   </component>
@@ -116,11 +131,31 @@
       <workItem from="1668373901230" duration="4850000" />
       <workItem from="1668450741598" duration="10248000" />
       <workItem from="1668664356827" duration="1546000" />
-      <workItem from="1668666409541" duration="4481000" />
+      <workItem from="1668666409541" duration="6000000" />
+      <workItem from="1668682244139" duration="761000" />
+      <workItem from="1668707294237" duration="1118000" />
+      <workItem from="1668708643912" duration="716000" />
+      <workItem from="1668710047073" duration="3373000" />
+      <workItem from="1668755290764" duration="2180000" />
+      <workItem from="1668799271649" duration="6794000" />
+      <workItem from="1668806173307" duration="428000" />
     </task>
+    <task id="LOCAL-00001" summary="add db">
+      <created>1668671215787</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668671215787</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add db" />
+    <MESSAGE value="add entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="add entities" />
   </component>
 </project>
