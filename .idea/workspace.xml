@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26066f0e-edd4-4397-b02d-d0ff2371f485" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sync-hack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sync-hack.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/config/AppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +44,6 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Admin.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/SyncHackApplication.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/db/schema.sql" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/db/data.sql" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Client.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/BaseEntity.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/application.yaml" root0="FORCE_HIGHLIGHTING" />
@@ -184,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668875583064</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix creds">
+      <created>1668876706144</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668876706144</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +205,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add db" />
@@ -207,7 +213,8 @@
     <MESSAGE value="add balance endpoint" />
     <MESSAGE value="populate db" />
     <MESSAGE value="liqui configure" />
-    <option name="LAST_COMMIT_MESSAGE" value="liqui configure" />
+    <MESSAGE value="fix creds" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix creds" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
