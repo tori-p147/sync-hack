@@ -1,5 +1,6 @@
 package synchack.financial.market.service;
 
+import java.math.BigDecimal;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,16 +19,16 @@ public class BalanceService {
 
   public Balance getBalance(Long clientId, String currency) {
     return balanceRepository.getBalanceByClientIdAndCurrency(clientId, currency)
-      .orElseThrow(() -> new NotFoundException("User`s " + clientId + "balance not found"));
+      .orElseThrow(() -> new NotFoundException("User`s " + clientId + " balance not found"));
   }
 
   public List<Balance> getAllBalances(Long clientId) {
     return balanceRepository.getAllBalances(clientId);
   }
 
-  public Balance create(Balance balance, Long clientId) {
+  public Balance create(Balance balance) {
     Assert.notNull(balance, "Balance must not be null");
-    balance.setClientId(clientId);
+    balance.setLockedAmount(BigDecimal.ZERO);
     return balanceRepository.save(balance);
   }
 

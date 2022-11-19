@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import synchack.financial.market.dto.BalanceDto;
+import synchack.financial.market.dto.CreateBalanceDto;
 import synchack.financial.market.mapper.BalanceToTotalBalanceMapper;
 import synchack.financial.market.model.balance.Balance;
 import synchack.financial.market.service.BalanceService;
@@ -33,8 +33,8 @@ public class BalanceController {
 
   private final BalanceToTotalBalanceMapper mapper;
 
-  @GetMapping("{clientId}/by-currency/{currency}")
-  public Balance getBalance(@PathVariable Long clientId, String currency) {
+  @GetMapping("{clientId}/by-currency")
+  public Balance getBalance(@PathVariable Long clientId, @RequestParam String currency) {
     return balanceService.getBalance(clientId, currency);
   }
 
@@ -45,8 +45,8 @@ public class BalanceController {
 
   @Transactional
   @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-  public ResponseEntity<Balance> createWithLocation(@Valid @RequestBody BalanceDto dto, @RequestParam Long clientId) {
-    Balance created = balanceService.create(mapper.fromBalanceDto(dto), clientId);
+  public ResponseEntity<Balance> createWithLocation(@Valid @RequestBody CreateBalanceDto dto) {
+    Balance created = balanceService.create(mapper.fromBalanceDto(dto));
     URI uriOfNewResource = ServletUriComponentsBuilder.fromCurrentContextPath()
       .path(URL + "/{id}")
       .buildAndExpand(created.getId()).toUri();

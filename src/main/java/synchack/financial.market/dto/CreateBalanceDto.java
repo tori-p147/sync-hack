@@ -10,7 +10,7 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class BalanceDto extends BaseDto {
+public class CreateBalanceDto extends BaseDto {
 
   private Long clientId;
 
@@ -18,14 +18,10 @@ public class BalanceDto extends BaseDto {
 
   private BigDecimal amount;
 
-  private BigDecimal lockedAmount;
-
-  public BalanceDto(Long id, Long clientId, String currency, BigDecimal amount,
-    BigDecimal lockedAmount) {
+  public CreateBalanceDto(Long id, Long clientId, String currency, BigDecimal amount) {
     super(id);
     this.clientId = clientId;
     this.currency = currency;
     this.amount = amount;
-    this.lockedAmount = lockedAmount;
   }
 }

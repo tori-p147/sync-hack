@@ -1,26 +1,29 @@
 package synchack.financial.market.model.user;
 
+import java.util.Collection;
+import java.util.Collections;
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-
-import lombok.*;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import synchack.financial.market.model.BaseEntity;
-
-import java.util.Collection;
-import java.util.Collections;
 
 @Getter
 @Setter
 @ToString
 @MappedSuperclass
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@AllArgsConstructor(access = AccessLevel.PROTECTED)
-public class BaseUser extends BaseEntity implements UserDetails {
+@AllArgsConstructor
+public class User extends BaseEntity implements UserDetails {
 
   @Column(name = "username", nullable = false)
   @NotBlank

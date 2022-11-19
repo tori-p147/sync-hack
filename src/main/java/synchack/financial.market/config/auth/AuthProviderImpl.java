@@ -8,7 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-import synchack.financial.market.model.user.BaseUser;
+import synchack.financial.market.model.user.User;
 import synchack.financial.market.dto.CredentialsDto;
 import synchack.financial.market.service.UserService;
 
@@ -36,7 +36,7 @@ public class AuthProviderImpl implements AuthProvider{
         String username = credentialsDto.getUsername();
         String password = credentialsDto.getPassword();
 
-        BaseUser baseUser = userService.getUserByUserName(username);
+        User baseUser = userService.getUserByUserName(username);
 
         if(baseUser != null && (baseUser.getUsername().equals(username) || baseUser.getEmail().equals(username))) {
             if(!passwordEncoder.matches(password, baseUser.getPassword())) {

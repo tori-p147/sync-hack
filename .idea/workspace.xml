@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26066f0e-edd4-4397-b02d-d0ff2371f485" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/controller/ExceptionInfoHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/config/auth/AuthProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/config/auth/AuthProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/controller/BalanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/controller/BalanceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/dto/BalanceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/dto/CreateBalanceDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/mapper/BalanceToTotalBalanceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/mapper/BalanceToTotalBalanceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/BaseUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/ClientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/BalanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/BalanceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/changelog.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v1/changelog.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +39,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fix-base_v2" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -40,17 +55,14 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/application.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/User.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/config/MvcConfig.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/config/AppConfig.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Admin.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/SyncHackApplication.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Client.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/BaseEntity.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/application.yaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/BaseUser.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/config/MvcConfig.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/ClientRepository.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/checkstyle.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/BaseEntity.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2HJg1QaanecH9we4J05p4e70wWL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -88,9 +100,9 @@
       <recent name="O:\projects\sync-hack" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="O:\projects\sync-hack\src\main\resources\liquibase\v1" />
       <recent name="O:\projects\sync-hack\src\main\resources\static" />
       <recent name="O:\projects\sync-hack\src\main\resources\liquibase" />
-      <recent name="O:\projects\sync-hack\src\main\resources\liquibase\v1" />
       <recent name="O:\projects\sync-hack\src\main\resources\db\changelog" />
       <recent name="O:\projects\sync-hack\src\main\java\synchack\financial\market\model" />
     </key>
@@ -146,6 +158,7 @@
       <workItem from="1668799271649" duration="6794000" />
       <workItem from="1668806173307" duration="428000" />
       <workItem from="1668845250720" duration="29353000" />
+      <workItem from="1668882282646" duration="5911000" />
     </task>
     <task id="LOCAL-00001" summary="add db">
       <created>1668671215787</created>
@@ -189,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668876706144</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix bean">
+      <created>1668877108171</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668877108171</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,17 +234,7 @@
     <MESSAGE value="populate db" />
     <MESSAGE value="liqui configure" />
     <MESSAGE value="fix creds" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix creds" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/synchack/financial.market/controller/BalanceController.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fix bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bean" />
   </component>
 </project>

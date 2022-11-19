@@ -2,11 +2,11 @@ spring:
   liquibase:
     enabled: true
     drop-first: false
-    change-log: liquibase/changelog.sql
+    change-log: liquibase/v1/changelog.sql
 
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5432/postgress
     username: postgres
     password: postgres
   jpa:

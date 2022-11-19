@@ -13,7 +13,7 @@ import synchack.financial.market.model.BaseMonetaryEntity;
 @Getter
 @Setter
 @Entity
-@Table(name = "balance", uniqueConstraints = {@UniqueConstraint(columnNames = {"id", "currency"},
+@Table(name = "balance", uniqueConstraints = {@UniqueConstraint(columnNames = {"client_id", "currency"},
     name = "user_balance_currency_unique")})
 @RequiredArgsConstructor
 public class Balance extends BaseMonetaryEntity {

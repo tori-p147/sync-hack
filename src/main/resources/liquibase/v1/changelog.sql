@@ -7,28 +7,24 @@ DROP TABLE IF EXISTS balance;
 DROP TABLE IF EXISTS operation;
 DROP TABLE IF EXISTS operation_type;
 
-CREATE TABLE users_client
+CREATE TABLE users
 (
     id         BIGSERIAL PRIMARY KEY,
     username   VARCHAR(255)            NOT NULL,
     email      VARCHAR(255)            NOT NULL,
     password   VARCHAR(255)            NOT NULL,
-    registered TIMESTAMP DEFAULT now() NOT NULL,
-    enabled    BOOLEAN   DEFAULT TRUE  NOT NULL,
-    validated  BOOLEAN   DEFAULT FALSE NOT NULL
+    enabled    BOOLEAN   DEFAULT FALSE NOT NULL
 );
 CREATE UNIQUE INDEX users_unique_email_idx
-    ON USERS_CLIENT (email);
+    ON users (email);
 
-CREATE TABLE users_admin
+CREATE TABLE USER_ROLE
 (
-    id       BIGSERIAL PRIMARY KEY,
-    username VARCHAR(255) NOT NULL,
-    email    VARCHAR(255) NOT NULL,
-    password VARCHAR(255) NOT NULL
+    user_id INTEGER NOT NULL,
+    role    VARCHAR,
+    CONSTRAINT user_role_unique UNIQUE (user_id, role),
+    FOREIGN KEY (user_id) REFERENCES USERS (id) ON DELETE CASCADE
 );
-CREATE UNIQUE INDEX users_admin_unique_email_idx
-    ON USERS_ADMIN (email);
 
 CREATE TABLE balance
 (
@@ -37,8 +33,8 @@ CREATE TABLE balance
     currency      VARCHAR(3) NOT NULL,
     amount        INTEGER,
     locked_amount INTEGER,
-    CONSTRAINT user_balance_currency_unique UNIQUE (id, currency),
-    FOREIGN KEY (client_id) REFERENCES USERS_CLIENT (id) ON DELETE CASCADE
+    CONSTRAINT user_balance_currency_unique UNIQUE (client_id, currency),
+    FOREIGN KEY (client_id) REFERENCES users (id) ON DELETE CASCADE
 );
 
 CREATE TABLE operation
@@ -47,6 +43,7 @@ CREATE TABLE operation
     client_id      INTEGER      NOT NULL,
     currency       VARCHAR(3)   NOT NULL,
     amount         INTEGER      NOT NULL,
+    commission     INTEGER      NOT NULL,
     type           VARCHAR(255) NOT NULL,
     operation_time TIMESTAMP    NOT NULL
 );
@@ -58,12 +55,7 @@ CREATE TABLE operation_type
     CONSTRAINT operation_type_unique UNIQUE (operation_id, type)
 );
 
-INSERT INTO users_client (USERNAME, EMAIL, PASSWORD, REGISTERED, ENABLED, VALIDATED)
-VALUES ('user', 'user@gmail.com', '{noop}password', now(), true, false);
-
-INSERT INTO users_admin (USERNAME, EMAIL, PASSWORD)
-VALUES ('admin', 'admin@gmail.com', '{noop}admin');
-
-INSERT INTO balance (CLIENT_ID, CURRENCY, AMOUNT, LOCKED_AMOUNT)
-VALUES (1, 'RUB', 1000, 0),
-       (1, 'USD', 2000, 0);
+INSERT INTO users (USERNAME, EMAIL, PASSWORD, ENABLED)
+VALUES ('user1', 'user1@gmail.com', '{noop}password1', false),
+       ('user2', 'user2@gmail.com', '{noop}password2', true),
+       ('admin', 'admin@gmail.com', '{noop}admin', true);
