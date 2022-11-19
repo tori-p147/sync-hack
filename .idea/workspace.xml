@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="26066f0e-edd4-4397-b02d-d0ff2371f485" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/sync-hack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sync-hack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/changelog.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/synchack/financialmarket/BalanceTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/synchack/financialmarket/BalanceTestData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,9 +77,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect" value="PostgreSQL" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/synchack/financial.market/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.27099842" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -84,10 +90,11 @@
       <recent name="O:\projects\sync-hack" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="O:\projects\sync-hack\src\main\resources\static" />
+      <recent name="O:\projects\sync-hack\src\main\resources\liquibase" />
+      <recent name="O:\projects\sync-hack\src\main\resources\liquibase\v1" />
+      <recent name="O:\projects\sync-hack\src\main\resources\db\changelog" />
       <recent name="O:\projects\sync-hack\src\main\java\synchack\financial\market\model" />
-      <recent name="O:\projects\sync-hack\src\main\resources\db" />
-      <recent name="O:\projects\sync-hack" />
-      <recent name="O:\projects\sync-hack\sync-hack\src\main\java\synchack\financial.market" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="synchack.financial.market" />
@@ -140,7 +147,7 @@
       <workItem from="1668755290764" duration="2180000" />
       <workItem from="1668799271649" duration="6794000" />
       <workItem from="1668806173307" duration="428000" />
-      <workItem from="1668845250720" duration="21432000" />
+      <workItem from="1668845250720" duration="26977000" />
     </task>
     <task id="LOCAL-00001" summary="add db">
       <created>1668671215787</created>
@@ -156,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668861371352</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="populate db">
+      <created>1668867702828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668867702828</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,11 +188,23 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add db" />
     <MESSAGE value="add entities" />
     <MESSAGE value="add balance endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="add balance endpoint" />
+    <MESSAGE value="populate db" />
+    <option name="LAST_COMMIT_MESSAGE" value="populate db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
