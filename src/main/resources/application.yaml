@@ -1,10 +1,20 @@
 spring:
+  liquibase:
+    enabled: false
+    drop-first: false
+    change-log: liquibase/db.changelog.master
+    default-schema: public
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/sync-hack-financial-market
+    username: user
+    password: passsword
   jpa:
     show-sql: true
     open-in-view: false
-    defer-datasource-initialization: true
+    defer-datasource-initialization: false
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     properties:
       javax:
         persistence:
