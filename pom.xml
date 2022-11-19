@@ -13,6 +13,7 @@
   <artifactId>sync-hack</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>sync-hack</name>
+  <packaging>jar</packaging>
   <description>sync-hack project for financial market</description>
   <properties>
     <java.version>11</java.version>
@@ -89,6 +90,27 @@
   </dependencies>
 
   <build>
+    <plugins>
+      <plugin>
+        <!-- Build an executable JAR -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
+              <mainClass>synchack.financial.market.SyncHackApplication</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
     <pluginManagement>
       <plugins>
         <plugin>
