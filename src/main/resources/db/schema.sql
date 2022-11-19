@@ -1,4 +1,8 @@
-DROP TABLE IF EXISTS user_roles;
+DROP TABLE IF EXISTS users_client;
+DROP TABLE IF EXISTS users_admin;
+DROP TABLE IF EXISTS balance;
+DROP TABLE IF EXISTS operation;
+DROP TABLE IF EXISTS operation_type;
 
 CREATE TABLE users_client
 (

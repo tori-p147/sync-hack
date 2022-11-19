@@ -4,27 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26066f0e-edd4-4397-b02d-d0ff2371f485" name="Changes" comment="add entities">
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/controller/BalanceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/dto/BalanceDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/dto/BaseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/error/IllegalRequestDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/error/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/mapper/BalanceToTotalBalanceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/BalanceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/OperationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/BalanceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/OperationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/util/JsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/util/ValidationUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/synchack/financialmarket/BalanceTestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/synchack/financialmarket/MatcherFactory.java" afterDir="false" />
+    <list default="true" id="26066f0e-edd4-4397-b02d-d0ff2371f485" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sync-hack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sync-hack.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/LockedBalance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/synchack/financialmarket/BalanceTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/synchack/financialmarket/BalanceTestData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +40,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/resources/db/initDB.sql" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/db/populateDB.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/db/schema.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/db/data.sql" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/config/AppConfig.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Admin.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" root0="FORCE_HIGHLIGHTING" />
@@ -119,7 +107,12 @@
       <recent name="synchack.financial.market" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.SyncHackApplication">
+    <configuration name="populateDB.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/main/resources/db/populateDB.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
     <configuration name="SyncHackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="sync-hack" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="synchack.financial.market.SyncHackApplication" />
@@ -127,6 +120,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.populateDB.sql" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -148,7 +146,7 @@
       <workItem from="1668755290764" duration="2180000" />
       <workItem from="1668799271649" duration="6794000" />
       <workItem from="1668806173307" duration="428000" />
-      <workItem from="1668845250720" duration="15168000" />
+      <workItem from="1668845250720" duration="21432000" />
     </task>
     <task id="LOCAL-00001" summary="add db">
       <created>1668671215787</created>
@@ -157,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668671215787</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add balance endpoint">
+      <created>1668861371352</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668861371352</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +171,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add db" />
     <MESSAGE value="add entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="add entities" />
+    <MESSAGE value="add balance endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="add balance endpoint" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/synchack/financial.market/controller/BalanceController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
