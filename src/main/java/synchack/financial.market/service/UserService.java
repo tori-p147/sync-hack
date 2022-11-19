@@ -1,8 +1,14 @@
 package synchack.financial.market.service;
 
-import org.springframework.stereotype.Service;
+import org.springframework.security.access.prepost.PreAuthorize;
+import synchack.financial.market.model.user.BaseUser;
 
-@Service
-public class UserService {
+public interface UserService {
 
+
+    public BaseUser getUserByUserName(String userName);
+
+    default String returnString(){
+        return "string";
+    }
 }
