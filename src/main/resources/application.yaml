@@ -1,14 +1,14 @@
 spring:
   liquibase:
-    enabled: false
+    enabled: true
     drop-first: false
-    change-log: liquibase/db.changelog.master
-    default-schema: public
+    change-log: liquibase/changelog.sql
+
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/sync-hack-financial-market
+    url: jdbc:postgresql://localhost:5432/postgres
     username: user
-    password: passsword
+    password: postgres
   jpa:
     show-sql: true
     open-in-view: false
