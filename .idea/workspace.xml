@@ -5,20 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26066f0e-edd4-4397-b02d-d0ff2371f485" name="Changes" comment="add entities">
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/BaseMonetaryEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/LockedBalance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/operation/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/operation/OperationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/BaseUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/controller/BalanceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/dto/BalanceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/dto/BaseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/error/IllegalRequestDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/error/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/mapper/BalanceToTotalBalanceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/BalanceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/OperationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/BalanceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/OperationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/util/ValidationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/synchack/financialmarket/BalanceTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/synchack/financialmarket/MatcherFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkstyle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/LockedBalance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/ClientRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/initDB.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -49,7 +54,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/resources/db/initDB.sql" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/db/populateDB.sql" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/LockedBalance.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/config/AppConfig.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/Admin.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/balance/Balance.java" root0="FORCE_HIGHLIGHTING" />
@@ -59,7 +63,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/resources/application.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/model/user/BaseUser.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/config/MvcConfig.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/UserRepository.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/synchack/financial.market/repository/ClientRepository.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/checkstyle.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2HJg1QaanecH9we4J05p4e70wWL" />
@@ -104,10 +108,15 @@
       <recent name="O:\projects\sync-hack\sync-hack\src\main\java\synchack\financial.market" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="synchack.financial.market" />
       <recent name="synchack.financial.market.model" />
       <recent name="synchack.financial.market.model.operation" />
-      <recent name="synchack.financial.market" />
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="synchack.financial.market.util" />
+      <recent name="synchack.financialmarket" />
+      <recent name="synchack.financial.market" />
     </key>
   </component>
   <component name="RunManager">
@@ -139,6 +148,7 @@
       <workItem from="1668755290764" duration="2180000" />
       <workItem from="1668799271649" duration="6794000" />
       <workItem from="1668806173307" duration="428000" />
+      <workItem from="1668845250720" duration="15168000" />
     </task>
     <task id="LOCAL-00001" summary="add db">
       <created>1668671215787</created>

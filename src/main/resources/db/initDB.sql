@@ -23,23 +23,15 @@ CREATE TABLE users_admin
 CREATE UNIQUE INDEX users_admin_unique_email_idx
     ON USERS_ADMIN (email);
 
-CREATE TABLE active_balance
-(
-    id        SERIAL PRIMARY KEY,
-    client_id INTEGER    NOT NULL,
-    currency  VARCHAR(3) NOT NULL,
-    amount    INTEGER,
-    CONSTRAINT user_account_unique UNIQUE (id, client_id),
-    FOREIGN KEY (client_id) REFERENCES USERS_CLIENT (id) ON DELETE CASCADE
-);
 
-CREATE TABLE locked_balance
+CREATE TABLE balance
 (
-    id        SERIAL PRIMARY KEY,
-    client_id INTEGER    NOT NULL,
-    currency  VARCHAR(3) NOT NULL,
-    amount    INTEGER,
-    CONSTRAINT user_locked_balance_unique UNIQUE (id, client_id),
+    id            SERIAL PRIMARY KEY,
+    client_id     INTEGER    NOT NULL,
+    currency      VARCHAR(3) NOT NULL,
+    amount        INTEGER,
+    locked_amount INTEGER,
+    CONSTRAINT user_balance_currency_unique UNIQUE (id, currency),
     FOREIGN KEY (client_id) REFERENCES USERS_CLIENT (id) ON DELETE CASCADE
 );
 
@@ -59,3 +51,4 @@ CREATE TABLE operation_type
     type         VARCHAR(255),
     CONSTRAINT operation_type_unique UNIQUE (operation_id, type)
 );
+
