@@ -14,6 +14,8 @@ import synchack.financial.market.service.UserService;
 
 import java.util.Collection;
 
+import static org.springframework.util.CollectionUtils.isEmpty;
+
 @Component
 public class AuthProviderImpl implements AuthProvider{
     private final UserService userService;
@@ -27,7 +29,6 @@ public class AuthProviderImpl implements AuthProvider{
     @Override
     public Authentication authenticate(CredentialsDto credentialsDto) {
         Authentication authentication = getToken(credentialsDto);
-        SecurityContextHolder.getContext().setAuthentication(authentication);
         return authentication;
     }
 
@@ -46,10 +47,8 @@ public class AuthProviderImpl implements AuthProvider{
             Collection<? extends GrantedAuthority> authorities = baseUser.getAuthorities();
 
             if(!baseUser.isEnabled()){
-                new UsernamePasswordAuthenticationToken(baseUser, password, null);
-            }
-
-            return new UsernamePasswordAuthenticationToken(baseUser, password, authorities);
+                return new UsernamePasswordAuthenticationToken(baseUser, password, null);
+            } else return new UsernamePasswordAuthenticationToken(baseUser, password, authorities);
         }
         else
             throw new BadCredentialsException("Username not found");
