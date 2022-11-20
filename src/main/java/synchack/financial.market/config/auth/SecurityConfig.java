@@ -27,8 +27,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable()
                 .headers().frameOptions().sameOrigin()
                 .and()
+                .formLogin()
+                .loginPage("/hakaton/v1/auth/sign_in")
+                .permitAll()
+                .and()
                 .authorizeRequests()
-                .antMatchers("/user/**", "/hakaton/**").authenticated();
+                .antMatchers("/hakaton/**").authenticated()
+                .and()
+                .logout()
+                .permitAll();
     }
 
     @Override

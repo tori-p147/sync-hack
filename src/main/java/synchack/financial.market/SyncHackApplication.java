@@ -9,5 +9,4 @@ public class SyncHackApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SyncHackApplication.class, args);
 	}
-
 }

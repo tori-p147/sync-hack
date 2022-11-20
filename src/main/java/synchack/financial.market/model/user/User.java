@@ -1,18 +1,13 @@
 package synchack.financial.market.model.user;
 
 import java.util.Collection;
-import java.util.Collections;
-import javax.persistence.Column;
-import javax.persistence.MappedSuperclass;
+import java.util.List;
+import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import synchack.financial.market.model.BaseEntity;
@@ -20,9 +15,10 @@ import synchack.financial.market.model.BaseEntity;
 @Getter
 @Setter
 @ToString
-@MappedSuperclass
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
+@Table(name = "users")
+@Entity
+@RequiredArgsConstructor
 public class User extends BaseEntity implements UserDetails {
 
   @Column(name = "username", nullable = false)
@@ -46,11 +42,12 @@ public class User extends BaseEntity implements UserDetails {
 
   @Column(name = "role", nullable = false)
   @NotBlank
-  private Role role;
+  @Transient
+  private List<Role> role;
 
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {
-    return Collections.singleton(role);
+    return role;
   }
 
   @Override

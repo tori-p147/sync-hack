@@ -8,8 +8,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-import synchack.financial.market.model.user.User;
 import synchack.financial.market.dto.CredentialsDto;
+import synchack.financial.market.model.user.User;
 import synchack.financial.market.service.UserService;
 
 import java.util.Collection;
@@ -36,7 +36,7 @@ public class AuthProviderImpl implements AuthProvider{
         String username = credentialsDto.getUsername();
         String password = credentialsDto.getPassword();
 
-        User baseUser = userService.getUserByUserName(username);
+        User baseUser = userService.getUserByUserName(username).orElseThrow();
 
         if(baseUser != null && (baseUser.getUsername().equals(username) || baseUser.getEmail().equals(username))) {
             if(!passwordEncoder.matches(password, baseUser.getPassword())) {
@@ -44,6 +44,11 @@ public class AuthProviderImpl implements AuthProvider{
             }
 
             Collection<? extends GrantedAuthority> authorities = baseUser.getAuthorities();
+
+            if(!baseUser.isEnabled()){
+                new UsernamePasswordAuthenticationToken(baseUser, password, null);
+            }
+
             return new UsernamePasswordAuthenticationToken(baseUser, password, authorities);
         }
         else
