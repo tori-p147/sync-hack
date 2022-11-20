@@ -12,7 +12,7 @@ import java.util.Optional;
 @Transactional
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    @Query("SELECT u FROM User u WHERE u.username =?1")
+    @Query("SELECT u FROM User u WHERE u.email =?1")
     Optional<User> getUserByUserName(String email);
 
     @Override

@@ -20,7 +20,6 @@ public class UserService {
 
     public Optional<User> getUserByUserName(String userName) {
         User user = userRepository.getUserByUserName(userName).get();
-        System.out.println(user.toString());
         return userRepository.getUserByUserName(userName);
     }
 
