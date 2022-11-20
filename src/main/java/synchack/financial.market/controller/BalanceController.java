@@ -1,5 +1,6 @@
 package synchack.financial.market.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import java.net.URI;
 import java.util.List;
 import javax.validation.Valid;
@@ -33,16 +34,19 @@ public class BalanceController {
 
   private final BalanceToTotalBalanceMapper mapper;
 
+  @Operation(summary = "Get user`s balance by currency")
   @GetMapping("{clientId}/by-currency")
   public Balance getBalance(@PathVariable Long clientId, @RequestParam String currency) {
     return balanceService.getBalance(clientId, currency);
   }
 
+  @Operation(summary = "Get all user`s balances")
   @GetMapping("/{clientId}")
   public List<Balance> getAllBalances(@PathVariable Long clientId) {
     return balanceService.getAllBalances(clientId);
   }
 
+  @Operation(summary = "Create new balance")
   @Transactional
   @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity<Balance> createWithLocation(@Valid @RequestBody CreateBalanceDto dto) {
@@ -54,6 +58,7 @@ public class BalanceController {
     return ResponseEntity.created(uriOfNewResource).body(created);
   }
 
+  @Operation(summary = "Update balance")
   @Transactional
   @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
   @ResponseStatus(HttpStatus.NO_CONTENT)

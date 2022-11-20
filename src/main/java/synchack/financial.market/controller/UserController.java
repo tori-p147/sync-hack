@@ -1,5 +1,6 @@
 package synchack.financial.market.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -29,11 +30,13 @@ public class UserController {
         this.userService = userService;
     }
 
+    @Operation(summary = "sign in")
     @GetMapping("sign_in")
     public ResponseEntity<ErrorCode> signIn(@RequestBody CredentialsDto credentials) {
         return getAuthority(credentials);
     }
 
+    @Operation(summary = "sign up")
     @PostMapping("sign_up")
     public ResponseEntity<User> signUp(@RequestBody CredentialsDto credentials) {
         User user = userService.createUser(credentials);

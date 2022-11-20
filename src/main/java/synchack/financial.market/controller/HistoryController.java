@@ -1,5 +1,6 @@
 package synchack.financial.market.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -18,9 +19,9 @@ public class HistoryController {
     private final HistoryRepository historyRepository;
     static final String URL = "/hakaton/v1/history/quotation";
 
+    @Operation(summary = "get all history")
     @GetMapping("/{clientId}")
     public List<History> getAllHistory(@PathVariable Long clientId) {
         return historyRepository.getAllHistory(clientId);
     }
-
 }
