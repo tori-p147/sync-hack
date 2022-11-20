@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Configuration;
   info = @Info(
     title = "REST API documentation",
     version = "1.0",
-    description = "credentials: user2@gmail.com / $2a$12$9tWrzyak6cuaEKc3M6jJ4e5TjzRn7.FjAzIK3yv5WqFt3P.oyOzEK<"
+    description = "credentials: user2@gmail.com / password"
   ),
   security = @SecurityRequirement(name = "basicAuth")
 )
